@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Rubrica Contatti</title>
-  <link rel="stylesheet" href="style.css"> <!-- Collega il CSS -->
+  <link rel="stylesheet" href="style.css"> <!-- Collega il foglio di stile -->
 </head>
 <body>
-  <div class="container">
+  <div class="container"> <!-- Contenitore principale centrato -->
     <h1>📇 Rubrica Contatti</h1>
 
-    <!-- Form per aggiungere nuovi contatti -->
-    <input type="text" id="name" placeholder="Nome">
-    <input type="text" id="phone" placeholder="Telefono">
-    <input type="email" id="email" placeholder="Email">
-    <button onclick="aggiungiContatto()">Aggiungi Contatto</button>
+    <!-- Form per inserire un nuovo contatto -->
+    <input type="text" id="name" placeholder="Nome">        <!-- Campo nome -->
+    <input type="text" id="phone" placeholder="Telefono">   <!-- Campo telefono -->
+    <input type="email" id="email" placeholder="Email">     <!-- Campo email -->
+    <button onclick="aggiungiContatto()">Aggiungi Contatto</button> <!-- Bottone per salvare -->
 
-    <!-- Lista dei contatti -->
+    <!-- Lista dinamica dei contatti -->
     <ul id="contactList"></ul>
   </div>
 
-  <script src="script.js"></script> <!-- Collega lo script JS -->
+  <script src="script.js"></script> <!-- Collegamento al file JavaScript -->
 </body>
 </html>
