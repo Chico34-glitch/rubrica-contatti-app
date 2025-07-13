@@ -1,14 +1,16 @@
+/* Stile generale della pagina */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f1f2f6;
+  background-color: #f1f2f6; /* Colore di sfondo */
   margin: 0;
   padding: 0;
 }
 
+/* Contenitore centrale della rubrica */
 .container {
   width: 90%;
   max-width: 500px;
-  margin: 50px auto;
+  margin: 50px auto; /* Centra la rubrica verticalmente */
   background-color: white;
   padding: 30px;
   border-radius: 10px;
@@ -16,6 +18,7 @@ body {
   text-align: center;
 }
 
+/* Stile degli input */
 input {
   display: block;
   width: 100%;
@@ -25,10 +28,11 @@ input {
   border-radius: 5px;
 }
 
+/* Stile del bottone blu */
 button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff; /* Blu */
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -36,27 +40,30 @@ button {
   cursor: pointer;
 }
 
+/* Effetto hover sul bottone */
 button:hover {
-  background-color: #0056b3; /* Blu scuro al passaggio */
+  background-color: #0056b3;
 }
 
+/* Lista dei contatti */
 ul {
   list-style-type: none;
   padding: 0;
   margin-top: 20px;
 }
 
+/* Ogni elemento contatto */
 li {
-  display: flex; /* Flexbox per affiancare testo e bottone */
-  justify-content: space-between; /* Spazio tra testo e bottone */
-  align-items: center; /* ✅ Allineamento verticale */
+  display: flex;                  /* Flexbox per affiancare elementi */
+  justify-content: space-between;/* Spazio tra testo e bottone */
+  align-items: center;           /* Centra verticalmente */
   background-color: #f8f9fa;
   padding: 12px;
   margin-bottom: 10px;
   border-radius: 6px;
 }
 
-/* Div che contiene solo il testo del contatto */
+/* Contenuto testuale del contatto */
 .contact-info {
   flex: 1;
   margin-right: 10px;
