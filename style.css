@@ -1,59 +1,77 @@
+/* Imposta lo sfondo generale della pagina */
 body {
-  font-family: Arial, sans-serif; /* Font leggibile */
-  background-color: #f0f2f5; /* Colore sfondo grigio chiaro */
-  display: flex;
-  justify-content: center; /* Centra orizzontalmente */
-  align-items: flex-start; /* Inizia dall’alto */
-  padding: 30px; /* Spazio interno alla pagina */
+  font-family: Arial, sans-serif;           /* Font leggibile */
+  background-color: #f0f2f5;                /* Colore di sfondo grigio chiaro */
+  margin: 0;                                /* Nessun margine intorno al body */
+  padding: 0;                               /* Nessun padding */
+  display: flex;                            /* Usa Flexbox per centrare il contenuto */
+  justify-content: center;                 /* Centra orizzontalmente */
+  align-items: center;                     /* Centra verticalmente */
+  height: 100vh;                            /* Altezza 100% viewport */
 }
 
+/* Contenitore principale della rubrica */
 .container {
-  background: white; /* Sfondo bianco */
-  padding: 30px; /* Spazio interno */
-  border-radius: 10px; /* Angoli arrotondati */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra leggera */
-  width: 400px; /* Larghezza fissa */
+  background-color: white;                  /* Sfondo bianco */
+  padding: 30px;                            /* Spazio interno */
+  border-radius: 10px;                      /* Angoli arrotondati */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Effetto ombra */
+  width: 90%;                               /* Larghezza mobile-friendly */
+  max-width: 400px;                         /* Larghezza massima */
+  text-align: center;                       /* Centra il contenuto */
 }
 
-input {
-  width: calc(100% - 20px); /* Larghezza quasi completa */
-  padding: 10px; /* Spazio interno nei campi */
-  margin-top: 10px; /* Distanza tra i campi */
+/* Titolo principale */
+h1 {
+  margin-bottom: 20px;                      /* Spazio sotto il titolo */
 }
 
+/* Input di testo (nome, telefono, email) */
+input[type="text"],
+input[type="email"] {
+  width: 100%;                              /* Larghezza completa */
+  padding: 10px;                            /* Spazio interno */
+  margin-bottom: 10px;                      /* Spazio sotto ogni input */
+  border: 1px solid #ccc;                   /* Bordo grigio */
+  border-radius: 5px;                       /* Angoli arrotondati */
+}
+
+/* Bottone per aggiungere il contatto */
 button {
-  padding: 10px; /* Spazio interno */
-  margin-top: 10px; /* Margine sopra */
-  cursor: pointer; /* Cursore tipo “clic” */
-  width: 100%; /* Larghezza piena */
-  background-color: #007bff; /* Colore blu */
-  color: white; /* Testo bianco */
-  border: none; /* Nessun bordo */
-  border-radius: 5px; /* Angoli arrotondati */
+  padding: 10px 20px;                       /* Spazio interno */
+  border: none;                             /* Nessun bordo */
+  border-radius: 5px;                       /* Angoli arrotondati */
+  background-color: #007bff;                /* Colore blu */
+  color: white;                             /* Testo bianco */
+  cursor: pointer;                          /* Cursore a forma di mano */
+  width: 100%;                              /* Occupa tutta la larghezza */
 }
 
+/* Bottone "Elimina" per ogni contatto */
+.delete-btn {
+  background-color: red;                    /* Colore rosso */
+  color: white;                             /* Testo bianco */
+  border: none;                             /* Nessun bordo */
+  padding: 5px 10px;                        /* Spazio interno ridotto */
+  cursor: pointer;                          /* Cursore a forma di mano */
+  margin-left: 10px;                        /* Spazio a sinistra rispetto al testo */
+  vertical-align: middle;                   /* ✅ Allineamento verticale al centro */
+}
+
+/* Lista dei contatti */
 ul {
-  list-style: none; /* Rimuove i pallini della lista */
-  padding: 0;
-  margin-top: 20px;
+  list-style-type: none;                    /* Rimuove i pallini */
+  padding: 0;                               /* Nessun padding */
+  margin-top: 20px;                         /* Spazio sopra alla lista */
 }
 
+/* Ogni contatto salvato */
 li {
-  padding: 10px;
-  background: #eee; /* Grigio chiaro */
-  margin-bottom: 10px; /* Distanza tra i contatti */
-  border-radius: 5px;
-  position: relative; /* Serve per posizionare il pulsante */
-}
-
-li button {
-  position: absolute; /* Posizionamento libero */
-  right: 10px; /* Allineato a destra */
-  top: 10px;
-  background: red; /* Sfondo rosso */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 8px;
-  cursor: pointer;
+  background-color: #f8f9fa;                /* Sfondo grigio chiaro */
+  margin-bottom: 10px;                      /* Spazio tra i contatti */
+  padding: 10px;                            /* Spazio interno */
+  border-radius: 5px;                       /* Angoli arrotondati */
+  display: flex;                            /* Flexbox per affiancare testo e bottone */
+  justify-content: space-between;           /* Spazio tra testo e bottone */
+  align-items: center;                      /* Allineamento verticale centrale */
 }
