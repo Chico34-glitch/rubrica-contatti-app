@@ -1,77 +1,75 @@
-/* Imposta lo sfondo generale della pagina */
 body {
-  font-family: Arial, sans-serif;           /* Font leggibile */
-  background-color: #f0f2f5;                /* Colore di sfondo grigio chiaro */
-  margin: 0;                                /* Nessun margine intorno al body */
-  padding: 0;                               /* Nessun padding */
-  display: flex;                            /* Usa Flexbox per centrare il contenuto */
-  justify-content: center;                 /* Centra orizzontalmente */
-  align-items: center;                     /* Centra verticalmente */
-  height: 100vh;                            /* Altezza 100% viewport */
+  font-family: Arial, sans-serif;
+  background-color: #f1f2f6;
+  margin: 0;
+  padding: 0;
 }
 
-/* Contenitore principale della rubrica */
 .container {
-  background-color: white;                  /* Sfondo bianco */
-  padding: 30px;                            /* Spazio interno */
-  border-radius: 10px;                      /* Angoli arrotondati */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Effetto ombra */
-  width: 90%;                               /* Larghezza mobile-friendly */
-  max-width: 400px;                         /* Larghezza massima */
-  text-align: center;                       /* Centra il contenuto */
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-/* Titolo principale */
-h1 {
-  margin-bottom: 20px;                      /* Spazio sotto il titolo */
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-/* Input di testo (nome, telefono, email) */
-input[type="text"],
-input[type="email"] {
-  width: 100%;                              /* Larghezza completa */
-  padding: 10px;                            /* Spazio interno */
-  margin-bottom: 10px;                      /* Spazio sotto ogni input */
-  border: 1px solid #ccc;                   /* Bordo grigio */
-  border-radius: 5px;                       /* Angoli arrotondati */
-}
-
-/* Bottone per aggiungere il contatto */
 button {
-  padding: 10px 20px;                       /* Spazio interno */
-  border: none;                             /* Nessun bordo */
-  border-radius: 5px;                       /* Angoli arrotondati */
-  background-color: #007bff;                /* Colore blu */
-  color: white;                             /* Testo bianco */
-  cursor: pointer;                          /* Cursore a forma di mano */
-  width: 100%;                              /* Occupa tutta la larghezza */
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Blu */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-/* Bottone "Elimina" per ogni contatto */
-.delete-btn {
-  background-color: red;                    /* Colore rosso */
-  color: white;                             /* Testo bianco */
-  border: none;                             /* Nessun bordo */
-  padding: 5px 10px;                        /* Spazio interno ridotto */
-  cursor: pointer;                          /* Cursore a forma di mano */
-  margin-left: 10px;                        /* Spazio a sinistra rispetto al testo */
-  vertical-align: middle;                   /* ✅ Allineamento verticale al centro */
+button:hover {
+  background-color: #0056b3; /* Blu scuro al passaggio */
 }
 
-/* Lista dei contatti */
 ul {
-  list-style-type: none;                    /* Rimuove i pallini */
-  padding: 0;                               /* Nessun padding */
-  margin-top: 20px;                         /* Spazio sopra alla lista */
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
 }
 
-/* Ogni contatto salvato */
 li {
-  background-color: #f8f9fa;                /* Sfondo grigio chiaro */
-  margin-bottom: 10px;                      /* Spazio tra i contatti */
-  padding: 10px;                            /* Spazio interno */
-  border-radius: 5px;                       /* Angoli arrotondati */
-  display: flex;                            /* Flexbox per affiancare testo e bottone */
-  justify-content: space-between;           /* Spazio tra testo e bottone */
-  align-items: center;                      /* Allineamento verticale centrale */
+  display: flex; /* Flexbox per affiancare testo e bottone */
+  justify-content: space-between; /* Spazio tra testo e bottone */
+  align-items: center; /* ✅ Allineamento verticale */
+  background-color: #f8f9fa;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+/* Div che contiene solo il testo del contatto */
+.contact-info {
+  flex: 1;
+  margin-right: 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+/* Bottone rosso di eliminazione */
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
 }
