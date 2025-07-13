@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif; /* Font leggibile */
+  background-color: #f0f2f5; /* Colore sfondo grigio chiaro */
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: flex-start; /* Inizia dall’alto */
+  padding: 30px; /* Spazio interno alla pagina */
+}
+
+.container {
+  background: white; /* Sfondo bianco */
+  padding: 30px; /* Spazio interno */
+  border-radius: 10px; /* Angoli arrotondati */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+  width: 400px; /* Larghezza fissa */
+}
+
+input {
+  width: calc(100% - 20px); /* Larghezza quasi completa */
+  padding: 10px; /* Spazio interno nei campi */
+  margin-top: 10px; /* Distanza tra i campi */
+}
+
+button {
+  padding: 10px; /* Spazio interno */
+  margin-top: 10px; /* Margine sopra */
+  cursor: pointer; /* Cursore tipo “clic” */
+  width: 100%; /* Larghezza piena */
+  background-color: #007bff; /* Colore blu */
+  color: white; /* Testo bianco */
+  border: none; /* Nessun bordo */
+  border-radius: 5px; /* Angoli arrotondati */
+}
+
+ul {
+  list-style: none; /* Rimuove i pallini della lista */
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  padding: 10px;
+  background: #eee; /* Grigio chiaro */
+  margin-bottom: 10px; /* Distanza tra i contatti */
+  border-radius: 5px;
+  position: relative; /* Serve per posizionare il pulsante */
+}
+
+li button {
+  position: absolute; /* Posizionamento libero */
+  right: 10px; /* Allineato a destra */
+  top: 10px;
+  background: red; /* Sfondo rosso */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
