@@ -1,25 +1,24 @@
-<!DOCTYPE html> <!-- Indica che il file è in HTML5 -->
-<html lang="it"> <!-- Imposta la lingua della pagina su italiano -->
+<!DOCTYPE html>
+<html lang="it">
 <head>
-  <meta charset="UTF-8" /> <!-- Codifica caratteri -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive design -->
-  <title>Rubrica Contatti</title> <!-- Titolo nella scheda del browser -->
-  <link rel="stylesheet" href="style.css" /> <!-- Collega il file CSS -->
+  <meta charset="UTF-8">
+  <title>Rubrica Contatti</title>
+  <link rel="stylesheet" href="style.css"> <!-- Collega il CSS -->
 </head>
 <body>
-  <div class="container"> <!-- Contenitore principale -->
-    <h1>📇 Rubrica Contatti</h1> <!-- Titolo dell'app -->
+  <div class="container">
+    <h1>📇 Rubrica Contatti</h1>
 
-    <div class="form"> <!-- Form per inserimento contatti -->
-      <input type="text" id="name" placeholder="Nome" /> <!-- Campo per il nome -->
-      <input type="text" id="phone" placeholder="Telefono" /> <!-- Campo per il telefono -->
-      <input type="email" id="email" placeholder="Email" /> <!-- Campo per l'email -->
-      <button onclick="addContact()">Aggiungi Contatto</button> <!-- Bottone per salvare -->
-    </div>
+    <!-- Form per aggiungere nuovi contatti -->
+    <input type="text" id="name" placeholder="Nome">
+    <input type="text" id="phone" placeholder="Telefono">
+    <input type="email" id="email" placeholder="Email">
+    <button onclick="aggiungiContatto()">Aggiungi Contatto</button>
 
-    <ul id="contactList"></ul> <!-- Lista dei contatti -->
+    <!-- Lista dei contatti -->
+    <ul id="contactList"></ul>
   </div>
 
-  <script src="script.js"></script> <!-- Collega il file JavaScript -->
+  <script src="script.js"></script> <!-- Collega lo script JS -->
 </body>
 </html>
